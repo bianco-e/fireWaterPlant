@@ -1,38 +1,65 @@
-.App {
+.wrapper {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.halfScreenDiv {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.threeOptions {
+  width: 35%;
+  border: none;
+  border-radius: 60px;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  background: none;
+  border: none;
+  font-size: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+  text-shadow: 0px 0px 3px black;
+}
+.button:hover {
+  box-shadow: 0px 0px 15px black;
+}
+.button:active {
+  box-shadow: 0px 0px 25px black, inset 0px 0px 3px black;
+}
+
+.notSeenButton {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  font-size: 75px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.whiteSmoke {
+  background-color: whitesmoke;
+  box-shadow: 0px 0px 5px black;
+}
+.lightGrey {
+  background-color: lightgray;
+  box-shadow: 0px 0px 5px black;
+}
+.rotated {
+  rotate: 180deg;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.divToCenter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
 }
